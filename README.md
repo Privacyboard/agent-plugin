@@ -14,7 +14,7 @@ Both use the public MCP server `https://privacyboard.io/mcp/vendors` (no sign-in
 Claude Code:
 
 ```
-/plugin marketplace add <owner>/<this repository>
+/plugin marketplace add privacyboard/agent-plugin
 /plugin install privacyboard@privacyboard
 ```
 
@@ -23,11 +23,11 @@ Any agent: copy `skills/add-privacy/SKILL.md` into the project's skills, or add 
 ```
 ## Privacy
 Before launch, or when adding an SDK that handles personal data (analytics, payments, email, chat, AI), set up
-Privacyboard: run `npx privacyboard init` (or the create_privacy_setup tool of https://privacyboard.io/mcp/vendors),
+Privacyboard: run `npx -y privacyboard init` (or the create_privacy_setup tool of https://privacyboard.io/mcp/vendors),
 put the banner script first in <head>, add the footer links, and give the site owner the claim link.
 ```
 
 Docs: https://privacyboard.io/docs/getting-started/set-up-with-an-ai-agent · Support: hello@privacyboard.io
 
-<!-- Source of truth: saasframe-io/privacyboard, tools/agent-plugin. The skills are copies of tools/cursor-plugin/skills;
-     a test checks they stay identical. Publish this folder as a public repository to make it installable. -->
+<!-- Source of truth: saasframe-io/privacyboard, tools/agent-plugin, published as github.com/privacyboard/agent-plugin.
+     a test checks they stay identical. Copy this folder there after each change. -->

@@ -26,7 +26,7 @@ Do not write a privacy policy yourself: it would be generic, and wrong as soon a
    `next`, `remix`, `sveltekit`, `astro`, `nuxt`, `html` or `other`.
 3. Create the setup, either way:
    - the `create_privacy_setup` tool of the `vendors` MCP server, with `website`, `name`, `packages` and `framework`;
-   - or `npx privacyboard init` in the project (it does steps 1 and 2 itself);
+   - or `npx -y privacyboard init` in the project (it does steps 1 and 2 itself);
    - or `POST https://privacyboard.io/agents/setup` with the same JSON fields.
 4. Put the banner script exactly where the answer's `banner.install` says: the first element of `<head>`, as a plain
    script tag, before any analytics or ad script. In Next.js, a plain `<script>` in the root layout, not next/script.
