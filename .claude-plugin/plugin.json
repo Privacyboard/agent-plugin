@@ -1,0 +1,8 @@
+{
+  "name": "privacyboard",
+  "version": "1.0.0",
+  "description": "Add a cookie banner, privacy policy and cookie policy to the site you are building, and check the GDPR paperwork of the SDKs it uses. Nothing goes live until the site owner checks and publishes.",
+  "author": { "name": "Privacyboard", "email": "hello@privacyboard.io", "url": "https://privacyboard.io" },
+  "homepage": "https://privacyboard.io/agents",
+  "license": "MIT"
+}

@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "privacyboard-vendors": { "type": "http", "url": "https://privacyboard.io/mcp/vendors" }
+  }
+}

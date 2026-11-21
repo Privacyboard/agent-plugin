@@ -1,0 +1,11 @@
+{
+  "name": "privacyboard",
+  "owner": { "name": "Privacyboard", "email": "hello@privacyboard.io" },
+  "plugins": [
+    {
+      "name": "privacyboard",
+      "source": "./",
+      "description": "Add a cookie banner, privacy policy and cookie policy to the site you are building, and check the GDPR paperwork of its SDKs."
+    }
+  ]
+}
