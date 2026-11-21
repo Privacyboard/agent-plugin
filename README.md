@@ -1,13 +1,15 @@
 # Privacyboard for coding agents
 
-Privacy for the site you are building, from Claude Code, Codex or any agent that reads skills.
+Privacy for the site you are building, from Claude Code, Cursor, Codex or any agent that reads skills.
 
 - **add-privacy**: adds the cookie banner, the privacy policy and the cookie policy. It reads the project's package
   names, creates a Privacyboard setup (no account), places the script and the footer links, and gives the site owner a
   claim link. Nothing goes live until they check and publish.
 - **vendor-gdpr-check**: before shipping an SDK, its data processing agreement, data location and transfer status.
 
-Both use the public MCP server `https://privacyboard.io/mcp/vendors` (no sign-in).
+Both use the public MCP server `https://privacyboard.io/mcp/vendors` (no sign-in). In Cursor, the plugin also adds the
+workspace server `https://privacyboard.io/mcp` (sign in with your Privacyboard account, every plan): your privacy
+requests, vendors, register, incidents and documents, with changes applied only when you confirm.
 
 ## Install
 
@@ -17,6 +19,8 @@ Claude Code:
 /plugin marketplace add privacyboard/agent-plugin
 /plugin install privacyboard@privacyboard
 ```
+
+Cursor: install Privacyboard from the Cursor marketplace.
 
 Any agent: copy `skills/add-privacy/SKILL.md` into the project's skills, or add this to `AGENTS.md` or `CLAUDE.md`:
 

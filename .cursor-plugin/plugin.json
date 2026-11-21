@@ -1,0 +1,14 @@
+{
+  "name": "privacyboard",
+  "description": "GDPR compliance in Cursor: add a cookie banner and privacy policy to the site you are building, look up any SaaS tool's DPA, data role, data location and DPF status, and work on your Privacyboard workspace.",
+  "version": "1.1.0",
+  "logo": "assets/logo.svg",
+  "homepage": "https://privacyboard.io/features/mcp-connector",
+  "author": {
+    "name": "Privacyboard",
+    "email": "hello@privacyboard.io",
+    "url": "https://privacyboard.io"
+  },
+  "repository": "https://github.com/privacyboard/agent-plugin",
+  "license": "MIT"
+}

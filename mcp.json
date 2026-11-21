@@ -1,0 +1,6 @@
+{
+  "mcpServers": {
+    "vendors": { "url": "https://privacyboard.io/mcp/vendors" },
+    "workspace": { "url": "https://privacyboard.io/mcp" }
+  }
+}
