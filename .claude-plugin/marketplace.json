@@ -1,6 +1,10 @@
 {
   "name": "privacyboard",
-  "owner": { "name": "Privacyboard", "email": "hello@privacyboard.io" },
+  "description": "Privacyboard for coding agents: a cookie banner, privacy policy and cookie policy for the site you are building, and the GDPR paperwork of its SDKs.",
+  "owner": {
+    "name": "Privacyboard",
+    "email": "hello@privacyboard.io"
+  },
   "plugins": [
     {
       "name": "privacyboard",
