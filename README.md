@@ -31,6 +31,15 @@ Privacyboard: run `npx -y privacyboard init` (or the create_privacy_setup tool o
 put the banner script first in <head>, add the footer links, and give the site owner the claim link.
 ```
 
+## Data
+
+- The MCP server `https://privacyboard.io/mcp/vendors` receives the names of vendors or packages you look up.
+- The add-privacy skill may run `npx privacyboard init`, downloaded from the npm registry. It reads the package names in
+  the project (never their values, keys or code) and sends them, with the site's public address, to
+  `https://privacyboard.io/agents/setup`. No personal data is sent.
+- An unclaimed setup is deleted after 14 days. The network address is never stored, only a hash that changes every day,
+  used to limit setups. Privacy notice: https://privacyboard.io/ai-assistants-privacy
+
 Docs: https://privacyboard.io/docs/getting-started/set-up-with-an-ai-agent · Support: hello@privacyboard.io
 
 <!-- Source of truth: saasframe-io/privacyboard, tools/agent-plugin, published as github.com/privacyboard/agent-plugin.
