@@ -22,7 +22,7 @@ Claude Code:
 /plugin install privacyboard@privacyboard
 ```
 
-Cursor: install Privacyboard from the Cursor marketplace.
+Cursor: the Privacyboard plugin is in review in the Cursor marketplace; meanwhile, use the skills command below.
 
 Any agent that reads skills (Codex, Cursor, Cline, Amp and others):
 
