@@ -31,7 +31,16 @@ Do not write a privacy policy yourself: it would be generic, and wrong as soon a
 4. Put the banner script exactly where the answer's `banner.install` says: the first element of `<head>`, as a plain
    script tag, before any analytics or ad script. In Next.js, a plain `<script>` in the root layout, not next/script.
 5. Add the answer's `links.privacyPolicy` and `links.cookiePolicy` to the site footer (`links.footer` is ready-made).
-6. Tell the user, in one or two sentences, what the answer's `forTheUser` says: open the claim link, create the free
+6. Analytics or ad SDKs started in code (posthog-js, mixpanel-browser, @amplitude/analytics-browser,
+   @segment/analytics-next, a Meta or TikTok pixel package…): start them only once their category is allowed. Add the
+   `privacyboard` package (`npm i privacyboard`) and move their init inside `whenAllowed`:
+   ```js
+   import { whenAllowed } from 'privacyboard';
+   whenAllowed('analytics', () => posthog.init('<key>', { api_host: 'https://eu.i.posthog.com' }));
+   ```
+   Categories: `analytics`, `marketing`, `functional`. In React, `useWhenAllowed` and `<ConsentGate>` come from
+   `privacyboard/react` (client components). Error tracking that only sends crashes usually stays as it is.
+7. Tell the user, in one or two sentences, what the answer's `forTheUser` says: open the claim link, create the free
    account, confirm the tools found, validate the documents, publish. Give the claim link itself; it is valid 14 days.
 
 ## What not to do
