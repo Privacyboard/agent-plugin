@@ -1,5 +1,7 @@
 # Privacyboard for coding agents
 
+[![skills.sh installs](https://skills.sh/b/privacyboard/agent-plugin)](https://skills.sh/privacyboard/agent-plugin)
+
 Privacy for the site you are building, from Claude Code, Cursor, Codex or any agent that reads skills.
 
 - **add-privacy**: adds the cookie banner, the privacy policy and the cookie policy. It reads the project's package
@@ -22,7 +24,13 @@ Claude Code:
 
 Cursor: install Privacyboard from the Cursor marketplace.
 
-Any agent: copy `skills/add-privacy/SKILL.md` into the project's skills, or add this to `AGENTS.md` or `CLAUDE.md`:
+Any agent that reads skills (Codex, Cursor, Cline, Amp and others):
+
+```
+npx skills add privacyboard/agent-plugin --skill add-privacy
+```
+
+Or copy `skills/add-privacy/SKILL.md` into the project's skills, or add this to `AGENTS.md` or `CLAUDE.md`:
 
 ```
 ## Privacy
